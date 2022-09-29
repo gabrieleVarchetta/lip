@@ -1,0 +1,1 @@
+let f g = if g 1 > 0 then g 2 else 4;;
