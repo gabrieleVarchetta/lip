@@ -1,5 +1,5 @@
 %{
-open Ast
+    open Ast
 %}
 
 %token TRUE
@@ -12,17 +12,15 @@ open Ast
 %token EOF
 
 %start <boolExpr> prog
-
 %%
 
 prog:
-  | e = expr; EOF { e }
+    | e = expr; EOF { e }
 ;
 
 expr:
-  | TRUE { True }
-  | FALSE { False }
-  | IF; e1 = expr; THEN; e2 = expr; ELSE; e3 = expr; { If(e1, e2, e3) }
-  | LPAREN; e=expr; RPAREN {e}
+    | TRUE { True }
+    | FALSE { False }
+    | IF; e1 = expr; THEN; e2 = expr; ELSE; e3 = expr; { If(e1, e2, e3) }
+    | LPAREN; e = expr; RPAREN { e }
 ;
-

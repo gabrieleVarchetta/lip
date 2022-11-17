@@ -1,2 +1,0 @@
-open LetarithexprLib.Main;;
-open LetarithexprLib.Ast;;

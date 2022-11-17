@@ -1,5 +1,5 @@
 {
-open Parser
+    open Parser
 }
 
 let white = [' ' '\t']+
@@ -9,11 +9,11 @@ rule read =
   | white { read lexbuf }  
   | "true" { TRUE }
   | "false" { FALSE }
-  | "(" { LPAREN }
-  | ")" { RPAREN }
   | "not" { NOT }
   | "and" { AND }
-  | "or" { OR }    
+  | "or" { OR }
+  | "(" { LPAREN }
+  | ")" { RPAREN }
   | "if" { IF }
   | "then" { THEN }
   | "else" { ELSE }

@@ -5,24 +5,22 @@
 (generate_opam_files true)
 
 (source
- (github bitbart/lip))
+ (github username/reponame))
 
-(authors "Massimo Bartoletti")
+(authors "Author Name")
 
-(maintainers "Massimo Bartoletti")
+(maintainers "Maintainer Name")
 
 (license LICENSE)
 
-(documentation https://github.com/bitbart/lip/tree/main/expr/boolexpr)
+(documentation https://url/to/documentation)
 
 (package
  (name boolexpr)
- (synopsis "Interpreter of simple boolean expressions")
- (description "The interpreter implements small-step and big-step semantics of simple boolean expressions")
+ (synopsis "A short synopsis")
+ (description "A longer description")
  (depends ocaml dune)
  (tags
   (topics "to describe" your project)))
-
 (using menhir 2.1)
-
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

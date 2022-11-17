@@ -1,1 +1,0 @@
-if pred succ pred succ 0 then iszero (succ 0) else succ pred succ 0

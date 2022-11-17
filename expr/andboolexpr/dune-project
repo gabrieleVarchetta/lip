@@ -7,22 +7,21 @@
 (source
  (github username/reponame))
 
-(authors "Massimo Bartoletti")
+(authors "Author Name")
 
-(maintainers "Massimo Bartoletti")
+(maintainers "Maintainer Name")
 
 (license LICENSE)
 
-(documentation https://github.com/bitbart/lip/tree/main/expr/andboolexpr)
+(documentation https://url/to/documentation)
 
 (package
  (name andboolexpr)
- (synopsis "Interpreter of boolean expressions with not,and,or")
- (description "The interpreter implements small-step and big-step semantics of boolean expressions with not,and,or")
+ (synopsis "A short synopsis")
+ (description "A longer description")
  (depends ocaml dune)
  (tags
   (topics "to describe" your project)))
 
 (using menhir 2.1)
-
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

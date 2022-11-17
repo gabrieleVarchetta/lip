@@ -1,2 +1,0 @@
-open ArithexprLib.Main;;
-open ArithexprLib.Ast;;

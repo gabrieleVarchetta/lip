@@ -1,5 +1,5 @@
-type boolExpr =
-    True
+type boolExpr = 
+    True 
   | False
   | Not of boolExpr
   | And of boolExpr * boolExpr
